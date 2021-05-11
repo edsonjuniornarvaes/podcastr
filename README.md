@@ -1,11 +1,11 @@
 <h1 align="center">
-  <img alt="podcastr" title="podcastr" src=".github/logo.png" />
+  <img alt="podcastr" title="podcastr" src="https://raw.githubusercontent.com/rocketseat-education/nlw-05-reactjs/main/.github/logo.png" />
 </h1>
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
 
- <img src="https://img.shields.io/static/v1?label=NLW&message=05&color=8257E5&labelColor=000000" alt="NLW 05" />
+ <img src="https://raw.githubusercontent.com/rocketseat-education/nlw-05-reactjs/main/.github/podcastr.png" alt="NLW 05" />
 </p>
 
 <br>
@@ -50,7 +50,7 @@ Feito com ♥ by Rocketseat 👋🏻 [Participe da nossa comunidade!](https://di
 
 <hr>
 
-# Rocketseat | Next Level Week 05
+### Rocketseat | Next Level Week 05
 
 Semana next level da Rocketseat
 
