@@ -37,6 +37,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
       <Head>
         <title>Home | Podcastr</title>
       </Head>
+
       <section className={styles.latestEpisodes}>
         <h2>Últimos lançamentos</h2>
 
@@ -129,7 +130,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await api.get("episodes?", {
+  const { data } = await api.get("episodes", {
     params: {
       _limit: 12,
       _sort: "published_at",

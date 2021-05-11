@@ -43,7 +43,12 @@
 
   header {
     padding-bottom: 1rem;
-    border-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-100);
+
+    h1 {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
 
     span {
       display: inline-block;
@@ -55,7 +60,6 @@
         position: relative;
 
         &::before {
-          //Bolinha entre a data e duração do podcastr
           content: "";
           width: 4px;
           height: 4px;

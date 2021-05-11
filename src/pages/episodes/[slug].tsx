@@ -5,7 +5,7 @@ import Link from "next/link";
 import Head from "next/head";
 
 import { useRouter } from "next/router";
-import { GetStaticPaths, GetStaticProps } from "next";
+import next, { GetStaticPaths, GetStaticProps } from "next";
 
 import { api } from "../../services/api";
 import { convertDurationToTimeString } from "../../utils/convertDurationToTimeString";
@@ -89,9 +89,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback:
-      "blocking" /*fallback: 'blocking' é utilizado para next.js/node.js...
-    só direciona o usuário para a tela que ele quer quando ela estiver toda carregada*/,
+    fallback: "blocking",
   };
 };
 
@@ -118,6 +116,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     props: {
       episode,
     },
-    revalidate: 60 * 60 * 24, // 24 horas
+    revalidate: 60 * 60 * 24, // 24 hours
   };
 };
